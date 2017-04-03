@@ -5,11 +5,11 @@ core download:
   locale: pt_BR
 
 core config:
-  dbname: myenvpress
+  dbname: aztecweb
   dbuser: root
 
 core install:
-  title: MyEnvPress
+  title: Aztec Online Solutions
   admin_user: admin
   admin_password: admin
   admin_email: admin@admin.com
