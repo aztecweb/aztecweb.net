@@ -2,10 +2,10 @@
 /**
  * Init class
  *
- * @package MyEnvPress
+ * @package Aztec
  */
 
-namespace MyEnvPress;
+namespace Aztec;
 
 use DI\Container;
 
@@ -30,10 +30,10 @@ class Kernel {
 	 */
 	public function init() {
 		$init_classes = [
-			\MyEnvPress\Setup\Assets::class,
-			\MyEnvPress\Setup\DisableEmoji::class,
-			\MyEnvPress\Setup\Head::class,
-			\MyEnvPress\Setup\HttpHeader::class,
+			\Aztec\Setup\Assets::class,
+			\Aztec\Setup\DisableEmoji::class,
+			\Aztec\Setup\Head::class,
+			\Aztec\Setup\HttpHeader::class,
 		];
 
 		foreach ( $init_classes as $class ) {

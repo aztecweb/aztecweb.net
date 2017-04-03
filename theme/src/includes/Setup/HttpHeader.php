@@ -2,12 +2,12 @@
 /**
  * HttpHeader class.
  *
- * @package MyEnvPress
+ * @package Aztec
  */
 
-namespace MyEnvPress\Setup;
+namespace Aztec\Setup;
 
-use MyEnvPress\Base;
+use Aztec\Base;
 
 /**
  * Manipulate elements inner the head tag

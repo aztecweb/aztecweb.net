@@ -1,6 +1,6 @@
 <?php
 
-use MyEnvPress\Kernel;
+use Aztec\Kernel;
 
 /**
  * Theme functionalities bootstrap

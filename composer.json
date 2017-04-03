@@ -1,6 +1,6 @@
 {
-	"name" : "edpittol/myenvpress",
-	"description" : "My WordPress development environment.",
+	"name" : "aztecweb.net",
+	"description" : "Aztec Online Solutions website.",
 	"repositories" : [{
 			"type" : "composer",
 			"url" : "https://wpackagist.org"
@@ -15,7 +15,7 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"MyEnvPress\\" : "public/wp-content/themes/myenvpress/includes/"
+			"Aztec\\" : "public/wp-content/themes/aztecweb.net/includes/"
 		}
 	}
 }

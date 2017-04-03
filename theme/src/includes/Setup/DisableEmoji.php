@@ -2,12 +2,12 @@
 /**
  * DisableEmoji class
  *
- * @package MyEnvPress
+ * @package Aztec
  */
 
-namespace MyEnvPress\Setup;
+namespace Aztec\Setup;
 
-use MyEnvPress\Base;
+use Aztec\Base;
 
 /**
  * Disable default WordPress emoji support

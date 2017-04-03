@@ -1,12 +1,9 @@
 {
-  "name": "myenvpress",
-  "description": "My WordPress development environment",
+  "name": "aztecweb.net",
+  "description": "Aztec Online Solutions website.",
   "main": "Gruntfile.js",
-  "authors": [
-    "Eduardo Pittol <edpittol@gmail.com>"
-  ],
   "license": "GPL-2.0",
-  "homepage": "https://github.com/edpittol/MyEnvPress",
+  "homepage": "https://github.com/aztecweb/aztecweb.net",
   "private": true,
   "ignore": [
     "**/.*",
