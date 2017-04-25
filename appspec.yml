@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: build
-    destination: /var/www/html/wp-content/themes/modaut/
+    destination: /var/www/aztecweb.net/html
 permissions:
-  - object: /var/www/html/wp-content/themes/modaut/
+  - object: /var/www/aztecweb.net/html
     owner: ubuntu
