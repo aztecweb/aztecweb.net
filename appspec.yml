@@ -1,0 +1,8 @@
+version: 0.0
+os: linux
+files:
+  - source: build
+    destination: /var/www/html/wp-content/themes/modaut/
+permissions:
+  - object: /var/www/html/wp-content/themes/modaut/
+    owner: ubuntu

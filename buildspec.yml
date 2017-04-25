@@ -1,0 +1,15 @@
+version: 0.1
+            
+phases:
+  install:
+    commands:
+      - npm install -g grunt-cli bower
+      - npm install
+      - bower install --allow-root
+  build:
+    commands:
+      - grunt build
+artifacts:
+  files:
+    - build/**/*
+    - appspec.yml

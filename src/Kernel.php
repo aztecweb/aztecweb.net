@@ -34,7 +34,6 @@ class Kernel {
 			\Aztec\Setup\DisableEmoji::class,
 			\Aztec\Setup\Head::class,
 			\Aztec\Setup\HttpHeader::class,
-			\Aztec\Temporary\Redirect::class,
 		];
 
 		foreach ( $init_classes as $class ) {

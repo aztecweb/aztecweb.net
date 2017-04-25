@@ -1,6 +1,8 @@
 # Project files
 /public/
-/tmp/
+!/public/wp-config.php
+.salts
+.env
 
 # Eclipse Project
 .settings/

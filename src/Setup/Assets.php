@@ -18,7 +18,6 @@ class Assets extends Base {
 	 * Add assets hooks
 	 */
 	public function init() {
-		add_action( 'wp_enqueue_scripts', $this->callback( 'google_fonts' ) );
 		add_action( 'wp_enqueue_scripts', $this->callback( 'enqueue_style' ) );
 		add_action( 'wp_enqueue_scripts', $this->callback( 'enqueue_script' ) );
 
@@ -26,24 +25,11 @@ class Assets extends Base {
 	}
 
 	/**
-	 * Register theme fonts by Google
-	 */
-	public function google_fonts() {
-		$query_args = [
-			'family' => 'EB+Garamond',
-		];
-		
-		wp_register_style( 'google-fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ) );
-	}
-
-	/**
 	 * Enqueue the theme style file
 	 */
 	public function enqueue_style() {
-		wp_enqueue_style( 'aztecweb', get_stylesheet_directory_uri() . '/assets/css/style.css', [ 'google-fonts' ] );
+		wp_enqueue_style( 'aztec-style', get_stylesheet_directory_uri() . '/assets/css/style.css' );
 	}
-	
-	
 
 	/**
 	 * Enqueue the JavaScript theme application
@@ -52,8 +38,8 @@ class Assets extends Base {
 	 * file url path.
 	 */
 	function enqueue_script() {
-	    wp_enqueue_script( 'aztecweb', get_stylesheet_directory_uri() . '/assets/js/libs/require.js', [ 'jquery' ], false, true );
-	    wp_localize_script( 'aztecweb', 'aztecweb', [
+	    wp_enqueue_script( 'aztec-script', get_stylesheet_directory_uri() . '/assets/js/libs/require.js', [ 'jquery' ], false, true );
+	    wp_localize_script( 'aztec-script', 'aztec_script', [
 	        'base_url' => get_stylesheet_directory_uri() . '/assets/js/libs',
 	    ] );
 	}
@@ -67,7 +53,7 @@ class Assets extends Base {
 	 * @return string The HTML tag adding the main application script.
 	 */
 	function script_loader_tag( $tag, $handle, $src ) {
-	    if ( 'aztecweb' === $handle ) {
+	    if ( 'aztec-script' === $handle ) {
 	        $require_main = get_stylesheet_directory_uri() . '/assets/js/app';
 	        return '<script data-main="' . $require_main . '" src="' . $src . '"></script>';
 	    }
