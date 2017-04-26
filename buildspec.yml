@@ -15,3 +15,5 @@ artifacts:
     - extra/**/*
     - vendor/**/*
     - appspec.yml
+    - composer.json
+    - composer.lock
