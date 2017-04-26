@@ -1,20 +1,20 @@
 {
-	"name" : "aztecweb.net",
-	"description" : "Aztec Online Solutions website.",
+	"name" : "aztecweb/aztecweb.net",
+	"description" : "aztecweb.net",
 	"repositories" : [{
 			"type" : "composer",
 			"url" : "https://wpackagist.org"
 		}
 	],
 	"require" : {
+		"johnpbloch/wordpress" : "^4.7",
 		"php-di/php-di" : "^5.4",
 		"vlucas/phpdotenv" : "^2.4",
 		"aaemnnosttv/wp-cli-dotenv-command" : "^1.0"
 	},
 	"require-dev" : {
 		"wp-cli/wp-cli" : "^1.1",
-		"wp-coding-standards/wpcs" : "^0.10",
-		"aaemnnosttv/wp-cli-dotenv-command" : "^1.0"
+		"wp-coding-standards/wpcs" : "^0.10"
 	},
 	"autoload" : {
 		"psr-4" : {
@@ -23,5 +23,8 @@
 		"files" : [
 			"src/WP_CLI/bootstrap.php"
 		]
+	},
+	"extra" : {
+		"wordpress-install-dir" : "public"
 	}
 }
