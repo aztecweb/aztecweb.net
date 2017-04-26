@@ -10,4 +10,8 @@ phases:
 artifacts:
   files:
     - public/**/*
+    - src/**/*
+    - bin/**/*
+    - extra/**/*
+    - vendor/**/*
     - appspec.yml
