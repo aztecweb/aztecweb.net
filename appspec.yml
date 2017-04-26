@@ -2,7 +2,11 @@ version: 0.0
 os: linux
 files:
   - source: build
-    destination: /var/www/aztecweb.net/html
+    destination: /var/www/aztecweb.net
 permissions:
-  - object: /var/www/aztecweb.net/html
+  - object: /var/www/aztecweb.net
     owner: ubuntu
+hooks:
+  AfterInstall:
+    - location: bin/install
+      timeout: 180
