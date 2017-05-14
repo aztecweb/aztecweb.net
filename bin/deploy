@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create a symoblic link to the website dotenv file
-ln -s /etc/env/aztecweb.net .env
+unlink .env && ln -s /etc/env/aztecweb.net .env
 
 # Install composer packages
 composer install
