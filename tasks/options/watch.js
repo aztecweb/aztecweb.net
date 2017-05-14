@@ -3,13 +3,13 @@
  */
 module.exports = {
 	livereload: {
-		files: [ 'public/**/*', '!**/*.log'],
+		files: [ 'public/**/*', 'src/**/*', '!**/*.log'],
 		options: {
 			livereload: true
 		}
 	},
 	theme: {
-		files: 'theme/src/**/*',
+		files: [ 'theme/src/**/*' ],
 		tasks: [ 'sync:theme' ]
 	},
 	stylus: {
