@@ -19,6 +19,7 @@ class Assets extends Base {
 	 */
 	public function init() {
 		add_action( 'wp_enqueue_scripts', $this->callback( 'enqueue_style' ) );
+		add_action( 'wp_enqueue_scripts', $this->callback( 'enqueue_fonts' ) );
 		add_action( 'wp_enqueue_scripts', $this->callback( 'enqueue_script' ) );
 
 		add_filter( 'script_loader_tag', $this->callback( 'script_loader_tag' ), 10, 3 );
@@ -29,6 +30,13 @@ class Assets extends Base {
 	 */
 	public function enqueue_style() {
 		wp_enqueue_style( 'aztec-style', get_stylesheet_directory_uri() . '/assets/css/style.css' );
+	}
+	
+	/**
+	 * Enqueue Google Fonts to the theme
+	 */
+	public function enqueue_fonts() {
+		wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=EB+Garamond', array(), false );
 	}
 
 	/**
