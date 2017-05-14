@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Set script environment variables
+export COMPOSER_HOME=/root/.composer
+
 # Create a symoblic link to the website dotenv file
 unlink .env && ln -s /etc/env/aztecweb.net .env
 
